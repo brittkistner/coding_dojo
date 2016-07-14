@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Single Capybara</title>
+</head>
+  <body>
+    <h2><%= capybara.name %></h2>
+    <div>
+      <ul>
+        <li>Color: <%= capybara.color %></li>
+        <li>Favorite Food: <%= capybara.favoriteFood %></li>
+      </ul>
+    </div>
+
+    <a href=<%= '/capybaras/' + capybara._id  + '/edit' %>><button type="button">Edit Capy</button></a>
+    <form action=<%= '/capybaras/' + capybara._id  + '/destroy' %> method='post'>
+      <div><input type='submit' value='Delete Capy'></div>
+    </form>
+    <a href='/'><button type="button">All Capys</button></a>
+  </body>
+</html>

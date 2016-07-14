@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Edit Capybara</title>
+</head>
+  <body>
+    <h2>Editing <%= capybara.name %></h2>
+    <form action=<%= '/capybaras/' + capybara._id %> method='post'>
+      <!-- TODO Set the value here for what the value is currently -->
+      <div>Name: <input type='text' name='name' value=<%=capybara.name %>></div>
+      <div>Color: <input type='text' name='color' value=<%=capybara.color %>></div>
+      <div>Favorite Food: <input type='text' name='favoriteFood' value=<%=capybara.favoriteFood %>></div>
+      <div><input type='submit' value='submit'></div>
+    </form>
+  </body>
+</html>
+
+

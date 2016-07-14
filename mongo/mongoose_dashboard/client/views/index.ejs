@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Capybara Index</title>
+</head>
+<body>
+  <h2>My Capys</h2>
+  <% for (var i in capybaras) { %>
+    <div><a href=<%= '/capybaras/' + capybaras[i]._id %>>
+      <button type="button"><%= capybaras[i].name %></button>
+    </a></div>
+  <% } %>
+  <hr>
+  <div><a href='/capybaras/new'><button type="button">Add Capy</button></a></div>
+</body>
+</html>
